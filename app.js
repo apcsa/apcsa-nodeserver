@@ -26,6 +26,7 @@ app.use(cookieParser());
 app.use('/apcsa/r', express.static(path.join(__dirname, '../apcsa-r/public')));
 app.use('/apcsa/llab', express.static(path.join(__dirname, '../llab/')));
 app.use('/apcsa/llab-config.js', express.static(path.join(__dirname, '../llab-config.js')));
+app.use('/apcsa', express.static(path.join(__dirname, '../apcsa.github.io')));
 if (app.get('env') === 'development') {
     // show the directory structure
    // app.use(serveIndex(path.join(__dirname, '../apcsa-r/public')));
